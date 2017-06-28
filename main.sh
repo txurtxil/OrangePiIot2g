@@ -2,8 +2,8 @@
 set -e
 
 # This script is used to build OrangePi system
-# Write: Buddy
-# Date:  2017-01-05
+# Write: surfero75
+# Date:  2017-06-28
 
 whiptail --title "OrangePi IoT 2G config menu - surfero75" --msgbox \
  "`figlet OrangePi` Script for manage and configure Orange Pi IoT 2G more info: surfero.blogspot.com" \

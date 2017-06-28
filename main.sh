@@ -34,6 +34,9 @@ if [ $OPTION = "0" ]; then
         echo "Use Bluetooth"
     elif [ $OPTION = "4" ]; then
         tmux new -s ventana1 
+     elif [ $OPTION = "5" ]; then
+	htop
+
 else
         echo "Bad Operation"
 fi

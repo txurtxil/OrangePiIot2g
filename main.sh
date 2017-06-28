@@ -24,15 +24,15 @@ OPTION=$(whiptail --title "Opi IoT 2G config system - surfero75" \
 #Bucle principal, insertar las llamadas a los scripts
 if [ $OPTION = "0" ]; then
     # Configure wifI
-       echo "configure WiFi"
+       /usr/local/sbin/OrangePi_Settings
     elif [ $OPTION = "1" ]; then
-        echo "Connect GPRS"
+        /usr/bin/wvdial &
     elif [ $OPTION = "2" ]; then
-            echo "SSh Inverso"
+        echo "SSh Inverso"
     elif [ $OPTION = "3" ]; then
         echo "Use Bluetooth"
     elif [ $OPTION = "4" ]; then
-        echo "Shell & tmux"
+        tmux new -s ventana1 
 else
         echo "Bad Operation"
 fi

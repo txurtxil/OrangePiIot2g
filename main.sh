@@ -24,7 +24,7 @@ OPTION=$(whiptail --title "Opi IoT 2G config system - surfero75" \
 #Bucle principal, insertar las llamadas a los scripts
 if [ $OPTION = "0" ]; then
     # Configure wifI
-       /usr/local/sbin/OrangePi_Settings
+       /usr/bin/OrangePi_Settings
     elif [ $OPTION = "1" ]; then
         /usr/bin/wvdial &
     elif [ $OPTION = "2" ]; then

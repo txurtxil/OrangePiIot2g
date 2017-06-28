@@ -19,6 +19,7 @@ OPTION=$(whiptail --title "Opi IoT 2G config system - surfero75" \
     "2"   "SSH inverso" \
     "3"   "Use Bluetooth" \
     "4"   "Shell & tmux" \
+    "5"    "htop" \
     3>&1 1>&2 2>&3)
 
 #Bucle principal, insertar las llamadas a los scripts

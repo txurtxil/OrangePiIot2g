@@ -17,3 +17,10 @@ Scripts de configuración y automatización
     "5"    "htop" 
     "6"    "Enable RW file system"
 
+Descargar:
+git clone https://github.com/txurtxil/OrangePiIot2g
+
+Instalar:
+./install.sh
+
+Ejecutar menuconfig

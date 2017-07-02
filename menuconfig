@@ -31,9 +31,9 @@ if [ $OPTION = "0" ]; then
     elif [ $OPTION = "1" ]; then
         /usr/bin/wvdial &
     elif [ $OPTION = "2" ]; then
-        ./scripts/ssh_inv.sh
+        /usr/local/bin/ssh_inv.sh
     elif [ $OPTION = "3" ]; then
-        ./scripts/bluetooth.sh
+        /usr/local/bin/bluetooth.sh
     elif [ $OPTION = "4" ]; then
         tmux new -s ventana1 
      elif [ $OPTION = "5" ]; then

@@ -6,7 +6,8 @@ set -e
 # Date:  2017-06-28
 
 whiptail --title "OrangePi IoT 2G config menu - surfero75" --msgbox \
- "Script for manage and configure Orange Pi IoT 2G more info: surfero.blogspot.com" \
+ "Script for manage and configure Orange Pi IoT 2G more info: \
+          http://surfero.blogspot.com" \
           15 50 0
 
 MENUSTR="Plase select option"

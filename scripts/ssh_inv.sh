@@ -5,6 +5,12 @@ set -e
 # your PC via GPRS / 3G  without public ip
 # manual: http://surfero.blogspot.com.es/2017/05/conexion-por-red-de-datos-movil-2g-g.html
 
+whiptail --title "Conexion ssh inversio - surfero75" --msgbox \
+ "Seguir las instrucciones en: http://surfero.blogspot.com.es/2017/05/conexion-por-red-de-datos-movil-2g-g.html" \
+          15 50 0
+
+
+
 FWD_PORT=1234
 WAIT_SECONDS=60
 REMOTE_ADDRESS=$1

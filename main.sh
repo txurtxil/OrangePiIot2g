@@ -6,7 +6,7 @@ set -e
 # Date:  2017-06-28
 
 whiptail --title "OrangePi IoT 2G config menu - surfero75" --msgbox \
- "`figlet OrangePi` Script for manage and configure Orange Pi IoT 2G more info: surfero.blogspot.com" \
+ "Script for manage and configure Orange Pi IoT 2G more info: surfero.blogspot.com" \
           15 50 0
 
 MENUSTR="Plase select option"
@@ -30,7 +30,7 @@ if [ $OPTION = "0" ]; then
     elif [ $OPTION = "1" ]; then
         /usr/bin/wvdial &
     elif [ $OPTION = "2" ]; then
-        echo "SSh Inverso"
+        ./scripts/ssh_inv.sh
     elif [ $OPTION = "3" ]; then
         echo "Use Bluetooth"
     elif [ $OPTION = "4" ]; then

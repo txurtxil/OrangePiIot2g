@@ -6,7 +6,8 @@ set -e
 # manual: http://surfero.blogspot.com.es/2017/05/conexion-por-red-de-datos-movil-2g-g.html
 
 whiptail --title "Conexion ssh inversio - surfero75" --msgbox \
- "Seguir las instrucciones en: https://goo.gl/3RJcck" \
+ "Seguir las instrucciones en: https://goo.gl/3RJcck \
+  a continuacion se pediran los datos de conexion."\
           15 50 0
 
 

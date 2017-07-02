@@ -20,6 +20,7 @@ OPTION=$(whiptail --title "Opi IoT 2G config system - surfero75" \
     "3"   "Use Bluetooth" \
     "4"   "Shell & tmux" \
     "5"    "htop" \
+    "6"    "Enable RW file system"\
     3>&1 1>&2 2>&3)
 
 #Bucle principal, insertar las llamadas a los scripts
@@ -36,6 +37,8 @@ if [ $OPTION = "0" ]; then
         tmux new -s ventana1 
      elif [ $OPTION = "5" ]; then
 	htop
+     elif [ $OPTION = "5" ]; then
+        mount -o remount,rw /
 
 else
         echo "Bad Operation"

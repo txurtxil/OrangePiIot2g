@@ -18,10 +18,10 @@ OPTION=$(whiptail --title "Opi IoT 2G config system - surfero75" \
     "0"   "Configure WiFi" \
     "1"   "Connect GPRS" \
     "2"   "SSH inverso" \
-    "3"   "Use Bluetooth" \
+    "3"   "Usar Bluetooth" \
     "4"   "Shell & tmux" \
     "5"    "htop" \
-    "6"    "Enable RW file system"\
+    "6"    "Habilitar RW file system"\
     3>&1 1>&2 2>&3)
 
 #Bucle principal, insertar las llamadas a los scripts
@@ -33,7 +33,7 @@ if [ $OPTION = "0" ]; then
     elif [ $OPTION = "2" ]; then
         ./scripts/ssh_inv.sh
     elif [ $OPTION = "3" ]; then
-        echo "Use Bluetooth"
+        ./scripts/bluetooth.sh
     elif [ $OPTION = "4" ]; then
         tmux new -s ventana1 
      elif [ $OPTION = "5" ]; then
